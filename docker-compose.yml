@@ -5,10 +5,10 @@ services:
     image: mariadb:10.5
     restart: always
     environment:
-      - MYSQL_DATABASE=photoview
-      - MYSQL_USER=photoview
-      - MYSQL_PASSWORD=photosecret
-      - MYSQL_RANDOM_ROOT_PASSWORD=1
+      - MARIADB_DATABASE=photoview
+      - MARIADB_USER=photoview
+      - MARIADB_PASSWORD=photosecret
+      - MARIADB_RANDOM_ROOT_PASSWORD=1
     volumes:
       - db_data:/var/lib/mysql
 
